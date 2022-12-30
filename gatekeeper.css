@@ -228,12 +228,12 @@ body
 	background:#fff
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box
 {
 	height:140px
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box .mapsSidebar_el
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box .classSidebar_el
 {
 	position:relative;
 	display:flex;
@@ -242,7 +242,7 @@ body
 	cursor:pointer
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box .mapsSidebar_el .mpasDots
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box .classSidebar_el .mpasDots
 {
 	position:absolute;
 	top:18px;
@@ -253,7 +253,7 @@ body
 	border-radius:100px
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box .mapsSidebar_el .mapsSidebar_el_number
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box .classSidebar_el .classSidebar_el_number
 {
 	display:flex;
 	margin-left:15px;
@@ -264,12 +264,12 @@ body
 	color:#898989
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box .mapsSidebar_el .onNumber_btn
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box .classSidebar_el .onNumber_btn
 {
 	color:#60CAAD
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box .mapsSidebar_el .mapsSidebar_el_title
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box .classSidebar_el .classSidebar_el_title
 {
 	display:flex;
 	align-items:center;
@@ -283,13 +283,13 @@ body
 	width:100px
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box .mapsSidebar_el .onTitle_btn
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box .classSidebar_el .onTitle_btn
 {
 	color:#000;
 	border-left:solid 1px #60CAAD
 }
 
-#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .mapsSidebar_box:nth-child(3) .mapsSidebar_el_title
+#update_gatekeeper .section03 .section03_02 .slide_sideBar #hexagon .classSidebar_box:nth-child(3) .classSidebar_el_title
 {
 	width:80px
 }

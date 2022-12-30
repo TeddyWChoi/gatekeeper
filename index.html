@@ -1912,11 +1912,7 @@
           <div class="navEl_03 section03_floatingNav_el">Battle Type</div>
           <!-- <div class="navEl_04 section03_floatingNav_el">New NPCs</div> -->
         </div>
-        <div
-		name="content-section"
-          class="section03_01"
-          :style="{'background-image':'url('+imgUrl+'bg_scenario.jpg)'}"
-        ></div>
+        <div name="content-section" class="section03_01" :style="{'background-image':'url('+imgUrl+'bg_scenario.jpg)'}"></div>
         <div name="content-section" class="section03_02">
           <div class="slide_sideBar">
             <div id="hexagon">
@@ -1965,13 +1961,9 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <div name="content-section" class="section03_03" 
-        :style="{'background-image':'url('+imgUrl+'bg_battletype.jpg)'}"
-        ></div>
+        </div>   
 	</div>
-        
+  <div name="content-section" class="section03_03" :style="{'background-image':'url('+imgUrl+'bg_battletype.jpg)'}"></div>
         <div class="section03_06"
 		:style="{'background-image':'url('+imgUrl+'bg_bottom.jpg)'}"
 	  >
@@ -2065,12 +2057,12 @@
           $("html").animate({ scrollTop: offset.top - 172 }, 400);
         });
       });
-      $(document).ready(function () {
-        $(".seeMoreEl_01").click(function () {
-          var offset = $(".section03_01").offset();
-          $("html").animate({ scrollTop: offset.top - 172 }, 400);
-        });
-      });
+      // $(document).ready(function () {
+      //   $(".seeMoreEl_01").click(function () {
+      //     var offset = $(".section03_01").offset();
+      //     $("html").animate({ scrollTop: offset.top - 172 }, 400);
+      //   });
+      // });
 
       $(document).ready(function () {
         $(".navEl_02").click(function () {
@@ -2078,12 +2070,12 @@
           $("html").animate({ scrollTop: offset.top - 172 }, 400);
         });
       });
-      $(document).ready(function () {
-        $(".seeMoreEl_02").click(function () {
-          var offset = $(".section03_02").offset();
-          $("html").animate({ scrollTop: offset.top - 172 }, 400);
-        });
-      });
+      // $(document).ready(function () {
+      //   $(".seeMoreEl_02").click(function () {
+      //     var offset = $(".section03_02").offset();
+      //     $("html").animate({ scrollTop: offset.top - 172 }, 400);
+      //   });
+      // });
 
       $(document).ready(function () {
         $(".navEl_03").click(function () {
@@ -2091,12 +2083,12 @@
           $("html").animate({ scrollTop: offset.top - 172 }, 400);
         });
       });
-      $(document).ready(function () {
-        $(".seeMoreEl_03").click(function () {
-          var offset = $(".section03_03").offset();
-          $("html").animate({ scrollTop: offset.top - 172 }, 400);
-        });
-      });
+      // $(document).ready(function () {
+      //   $(".seeMoreEl_03").click(function () {
+      //     var offset = $(".section03_03").offset();
+      //     $("html").animate({ scrollTop: offset.top - 172 }, 400);
+      //   });
+      // });
 
       // $(document).ready(function () {
       //   $(".navEl_04").click(function () {
@@ -2116,6 +2108,7 @@
         $(window).scroll(function () {    
 			$("[name*='content-section']").each(function (i) {
 				if ($(this).position().top-172 <= $(window).scrollTop()) {
+          console.log($(this).position().top-172 + "/" + $(window).scrollTop())
 					$('.section03_floatingNav_el').removeClass('naviActive');
 					$('.section03_floatingNav_el').eq(i).addClass('naviActive');
 				} else {

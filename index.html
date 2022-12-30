@@ -1921,14 +1921,14 @@
           <div class="slide_sideBar">
             <div id="hexagon">
               <div
-                class="mapsSidebar_box"
+                class="classSidebar_box"
                 v-for="(el, index) in newClassData"
                 :key="index"
               >
-                <div class="mapsSidebar_el" @click="handleMapsSidebar(index)">
+                <div class="classSidebar_el" @click="handleMapsSidebar(index)">
                   <div v-if="el.valid" class="mpasDots"></div>
-                  <div class="mapsSidebar_el_number">{{el.number}}</div>
-                  <div class="mapsSidebar_el_title">{{el.title}}</div>
+                  <div class="classSidebar_el_number">{{el.number}}</div>
+                  <div class="classSidebar_el_title">{{el.title}}</div>
                 </div>
               </div>
             </div>
@@ -2029,10 +2029,10 @@
             // 감지해서 사이드 바 디자인 변경
             var newClassData = update_peneuma._data.newClassData;
             var getClassTitle = document.getElementsByClassName(
-              "mapsSidebar_el_title"
+              "classSidebar_el_title"
             );
             var getClassNumber = document.getElementsByClassName(
-              "mapsSidebar_el_number"
+              "classSidebar_el_number"
             );
 
             for (let i = 0; i < newClassData.length; i++) {
@@ -2213,10 +2213,10 @@
           handleMapsSidebar: function (index) {
             let vm = this;
             var getClassTitle = document.getElementsByClassName(
-              "mapsSidebar_el_title"
+              "classSidebar_el_title"
             );
             var getClassNumber = document.getElementsByClassName(
-              "mapsSidebar_el_number"
+              "classSidebar_el_number"
             );
             $(".new_maps_slider").slick("slickGoTo", index);
             for (let i = 0; i < vm.newClassData.length; i++) {
@@ -2246,10 +2246,10 @@
         mounted() {
           let vm = this;
           var getClassTitle = document.getElementsByClassName(
-            "mapsSidebar_el_title"
+            "classSidebar_el_title"
           );
           var getClassNumber = document.getElementsByClassName(
-            "mapsSidebar_el_number"
+            "classSidebar_el_number"
           );
          
 

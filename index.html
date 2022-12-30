@@ -1943,7 +1943,7 @@
               :style="{'background-image':'url(https://static.papayaplay.com/static/assets/images/latale/portal/update/windia/btn_map_right.png)'}"
             ></div> -->
           </div>
-          <div class="new_maps_slider">
+          <div class="new_class_slider">
             <div
               class="slide"
               v-for="(slide, index) in newClassData"
@@ -2002,7 +2002,7 @@
     <script>
       // 캐러셀
       $(function () {
-        $(".new_maps_slider").slick({
+        $(".new_class_slider").slick({
           slide: "div", //슬라이드 되어야 할 태그 ex) div, li
           infinite: true, //무한 반복 옵션
           slidesToShow: 1, // 한 화면에 보여질 컨텐츠 개수
@@ -2023,7 +2023,7 @@
 
       // 캐러셀 현재 상태 감지
       $(function () {
-        $(".new_maps_slider").on(
+        $(".new_class_slider").on(
           "afterChange",
           function (event, slick, currentSlide) {
             // 감지해서 사이드 바 디자인 변경
@@ -2218,7 +2218,7 @@
             var getClassNumber = document.getElementsByClassName(
               "classSidebar_el_number"
             );
-            $(".new_maps_slider").slick("slickGoTo", index);
+            $(".new_class_slider").slick("slickGoTo", index);
             for (let i = 0; i < vm.newClassData.length; i++) {
               if (index === i) {
                 vm.newClassData[i].valid = true;
